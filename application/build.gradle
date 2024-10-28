@@ -1,0 +1,22 @@
+apply plugin: 'application'
+
+mainClassName = "nava.avaliation.nava"
+
+dependencies {
+    implementation(project(":adapters"))
+    implementation(project(":cep-client-adapter"))
+    implementation(project(":database-adapter"))
+    implementation(project(":web"))
+
+    implementation(project(":boundary-context"))
+    implementation(project(":cep-client-boundary-context"))
+    implementation(project(":database-boundary-context"))
+    implementation(project(":input-boundary"))
+
+    implementation(project(":core"))
+    implementation(project(":usecase"))
+    implementation(project(":entities"))
+
+    implementation(project(":utils"))
+
+}

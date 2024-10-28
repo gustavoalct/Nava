@@ -1,0 +1,7 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:3.3.3'
+
+    implementation(project(":input-boundary"))
+    implementation(project(":utils"))
+
+}

@@ -1,0 +1,24 @@
+rootProject.name = "nava"
+
+include 'application'
+include 'adapters'
+include 'core'
+include 'utils'
+include 'boundary-context'
+
+file("adapters").eachDir {
+    include it.name
+    project(":${it.name}").projectDir = it
+}
+
+file("boundary-context").eachDir {
+    include it.name
+    project(":${it.name}").projectDir = it
+}
+
+file("core").eachDir {
+    include it.name
+    project(":${it.name}").projectDir = it
+}
+
+

@@ -1,0 +1,15 @@
+spring.jpa.open-in-view: false
+
+spring.datasource.url: jdbc:postgresql://localhost:5432/nava
+spring.datasource.username: postgres
+spring.datasource.password: postgres
+spring.datasource.driver-class-name: org.postgresql.Driver
+
+# Configurações de JPA e Hibernate
+spring.jpa.show-sql: true
+spring.jpa.hibernate.ddl-auto: update
+spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.persistence.provider: org.hibernate.jpa.HibernatePersistenceProvider
+
+
+

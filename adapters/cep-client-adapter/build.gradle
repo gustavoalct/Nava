@@ -1,0 +1,5 @@
+dependencies {
+    implementation(project(":cep-client-boundary-context"))
+    implementation(project(":utils"))
+
+}
